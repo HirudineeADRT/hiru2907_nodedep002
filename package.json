@@ -1,0 +1,8 @@
+{
+  "name": "hiru2907_nodedep002",
+  "version": "1.0.0",
+  "dependencies": {
+    "faker": "4.1.0"
+  },
+  "devDependencies": {}
+}

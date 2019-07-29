@@ -1,0 +1,117 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "3686fa79-c4e3-4021-a415-e696dd33abbe": {
+        "id": "3686fa79-c4e3-4021-a415-e696dd33abbe",
+        "parent": null,
+        "name": "hiru2907_nodedep002",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "c2185c80-a7aa-4dbd-951c-d02c3bc682c4"
+        ],
+        "isRemovable": false,
+        "filePath": "hiru2907_nodedep002"
+      },
+      "c2185c80-a7aa-4dbd-951c-d02c3bc682c4": {
+        "id": "c2185c80-a7aa-4dbd-951c-d02c3bc682c4",
+        "parent": "3686fa79-c4e3-4021-a415-e696dd33abbe",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "hiru2907_nodedep002/lambda.js",
+        "code": "let faker = require('faker');\nexports.handler = function(event, context, callback) {\n    \n\n    callback(null, {\"message\": faker.internet.userName()});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1Hirunodetest123sampleget",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "87048a6d-62f3-4b76-90f4-0ef9f9eff168": {
+            "id": "87048a6d-62f3-4b76-90f4-0ef9f9eff168",
+            "name": "Unnamed event",
+            "functionId": "c2185c80-a7aa-4dbd-951c-d02c3bc682c4",
+            "event": "{\n    \"key1\": \"value1\",\n    \"key2\": \"value2\",\n    \"key3\": \"value3\"\n}"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "3686fa79-c4e3-4021-a415-e696dd33abbe",
+    "openFiles": [
+      "c2185c80-a7aa-4dbd-951c-d02c3bc682c4"
+    ],
+    "currentFileId": "c2185c80-a7aa-4dbd-951c-d02c3bc682c4",
+    "resources": {
+      "apigusEast1Hirunodetest123sampleget": {
+        "name": "apigusEast1Hirunodetest123sampleget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "Hiru_node",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "test123/sample",
+          "resourcePath": "/test123/sample",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Test",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "faker": {
+          "name": "faker",
+          "version": "4.1.0",
+          "language": "javascript"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "hiru2907_nodedep002",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1564395061652
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "hiru2907_nodedep002",
+      "url": "https://github.com/HirudineeADRT/hiru2907_nodedep002",
+      "branches": []
+    }
+  }
+}
